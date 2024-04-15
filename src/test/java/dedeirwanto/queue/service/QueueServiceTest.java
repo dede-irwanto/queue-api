@@ -10,6 +10,7 @@ public class QueueServiceTest {
     @Autowired
     private QueueRepository queueRepository;
 
+
     @BeforeEach
     void setUp() {
 
@@ -20,6 +21,10 @@ public class QueueServiceTest {
         String code = "001";
 
         System.out.println(Integer.parseInt(code));
+    }
 
+    @Test
+    void testGetChart() {
+        queueRepository.findAll();
     }
 }

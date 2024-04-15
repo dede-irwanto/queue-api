@@ -1,6 +1,5 @@
 package dedeirwanto.queue.controller;
 
-import dedeirwanto.queue.dto.ChartResponseDTO;
 import dedeirwanto.queue.repository.ServiceTypeRepository;
 import dedeirwanto.queue.service.DashboardService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +39,7 @@ public class DashboardController {
 
     @GetMapping("/chart")
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
-    public ResponseEntity<List<ChartResponseDTO>> getCharts() {
+    public ResponseEntity<List<Object>> getCharts() {
         return ResponseEntity.ok().body(dashboardService.getCharts());
     }
 }

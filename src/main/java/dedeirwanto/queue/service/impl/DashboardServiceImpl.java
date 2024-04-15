@@ -1,11 +1,6 @@
 package dedeirwanto.queue.service.impl;
 
-import dedeirwanto.queue.dto.ChartResponseDTO;
-import dedeirwanto.queue.repository.QueueRepository;
-import dedeirwanto.queue.service.CounterService;
-import dedeirwanto.queue.service.DashboardService;
-import dedeirwanto.queue.service.ServiceTypeService;
-import dedeirwanto.queue.service.UserService;
+import dedeirwanto.queue.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +18,7 @@ public class DashboardServiceImpl implements DashboardService {
     private CounterService counterService;
 
     @Autowired
-    private QueueRepository queueRepository;
+    private QueueService queueService;
 
     @Override
     public long operatorCount() {
@@ -41,7 +36,7 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public List<ChartResponseDTO> getCharts() {
-        return queueRepository.getCharts();
+    public List<Object> getCharts() {
+        return queueService.getCharts();
     }
 }

@@ -2,6 +2,8 @@ package dedeirwanto.queue.service;
 
 import dedeirwanto.queue.dto.QueueResponseDTO;
 
+import java.util.List;
+
 public interface QueueService {
     QueueResponseDTO queuePrint(String serviceTypeId);
 
@@ -17,4 +19,5 @@ public interface QueueService {
 
     QueueResponseDTO getQueueCalled();
 
+    List<Object> getCharts();
 }

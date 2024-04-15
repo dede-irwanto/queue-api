@@ -1,4 +1,9 @@
 create database queue_db;
+
+create user queue_user identified by 'queue_password';
+
+grant all privileges on queue_db.* to 'queue_user'@'%';
+
 use queue_db;
 drop table roles;
 create table roles

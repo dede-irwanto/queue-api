@@ -1,7 +1,5 @@
 package dedeirwanto.queue.service;
 
-import dedeirwanto.queue.dto.ChartResponseDTO;
-
 import java.util.List;
 
 public interface DashboardService {
@@ -11,5 +9,5 @@ public interface DashboardService {
 
     long counterCount();
 
-    List<ChartResponseDTO> getCharts();
+    List<Object> getCharts();
 }
