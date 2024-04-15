@@ -1,0 +1,50 @@
+Application requirements:
+
+### On Queue Machine #########
+1. Print Queue by service type
+##############################
+
+### On LCD MOnitor ###
+1. View Queue Progress
+######################
+
+### On Client PC ##############
+## Auth ###############
+1. Login: admin or user
+2. Logout
+#######################
+
+## Admin Role #########
+
+# Application Setting:
+1. Add + Update Logo
+2. Add + Update Institute Name
+
+# User:
+1. Add User
+2. List User
+3. Delete User
+
+# Counter:
+1. Add Counter
+2. List Counter
+3. Update Counter
+4. Delete Counter
+
+# Service type:
+1. Add Service Type
+2. List Service Type
+3. Update Service Type
+4. Delete Service Type
+#######################
+
+## User Role ########
+# Queue Call
+1. Call Queue
+2. Recall Queue
+
+# User:
+1. Update User
+#######################
+
+##############################
